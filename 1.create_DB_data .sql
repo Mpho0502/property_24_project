@@ -1,0 +1,25 @@
+CREATE DATABASE property24;
+
+go
+
+create table property_details(
+COUNTRY varchar(250),
+PROVINCE varchar(250),
+CITY varchar(250),
+PROPERTY_PRICE int,
+BEDROOMS int,
+BATHROOMS int,
+PARKING int,
+FLOOR_SIZE int,
+MONTHLY_REPAYMENT int,
+TOTAL_ONCE_OFF_COSTS int,
+MIN_GROSS_MONTHLY_INCOME int
+
+)
+
+--INSERT INTO table_name (column1, column2, column3, ...)
+--VALUES (value1, value2, value3, ...);
+
+insert into property_details(COUNTRY,PROVINCE,CITY,PROPERTY_PRICE,BEDROOMS,BATHROOMS,PARKING,FLOOR_SIZE,MONTHLY_REPAYMENT,TOTAL_ONCE_OFF_COSTS,MIN_GROSS_MONTHLY_INCOME)
+
+VALUES ('South_Africa','North_West','Rustenburg',8000000,6,5.5,3,950,74110,856923,247035)
