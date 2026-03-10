@@ -1,4 +1,4 @@
-# Ketro's_property
+# property_24_project
 I am writing to provide a summary of our current project, which involves the analysis of over 100,000 properties sourced from the Property24 database. Our objective is to develop a comprehensive system that allows users to access and manipulate this extensive dataset efficiently.
 
 To achieve this, we have utilized advanced SQL coding techniques essential for querying and managing the data effectively. Our team has implemented a range of coding standards to enhance data integrity and ensure seamless execution of complex queries. The manipulation of this data will enable users to derive meaningful insights and trends within the property market.
