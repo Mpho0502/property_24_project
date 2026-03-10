@@ -24,7 +24,7 @@ select * from [dbo].[PropertyData] where BEDROOMS > 3
 
 --question 7
 
-select * from [dbo].[PropertyData] where PARKING > 1
+select * from [dbo].[PropertyData] where PARKING >= 2
 
 --question 8
 
@@ -48,7 +48,7 @@ select * from [dbo].[PropertyData] where PROVINCE = 'Western Cape' AND PROPERTY_
 
 --question 13
 
-select * from [dbo].[PropertyData] where PROVINCE = 'KwaZulu-Natal' AND BEDROOMS > 2
+select * from [dbo].[PropertyData] where PROVINCE = 'KwaZulu-Natal' AND BEDROOMS >= 2
 
 --question 14
 
@@ -72,8 +72,8 @@ select PROPERTY_ID,PROVINCE,PROPERTY_PRICE from [dbo].[PropertyData] order by PR
 
 --question 19
 
-select PROPERTY_ID,CITY, PROPERTY_PRICE from [dbo].[PropertyData] order by PROPERTY_PRICE ASC  
+select top 10 PROPERTY_ID,PROVINCE, CITY, PROPERTY_PRICE from [dbo].[PropertyData] order by PROPERTY_PRICE ASC  
 
 --question 20  R30 000+
 
-select PROPERTY_ID, Min_Gross_Monthly_Income,PROPERTY_PRICE from [dbo].[PropertyData] where PROPERTY_PRICE > 4000000 order by Min_Gross_Monthly_Income ASC
+select PROPERTY_ID, PROVINCE, CITY, Min_Gross_Monthly_Income,PROPERTY_PRICE from [dbo].[PropertyData] where PROPERTY_PRICE > 4000000 order by Min_Gross_Monthly_Income ASC
